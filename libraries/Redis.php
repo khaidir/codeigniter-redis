@@ -45,7 +45,7 @@ class Redis {
 		
 		log_message('debug', 'Redis Class Initialized');
 		
-		$this->_ci = get_instance();
+		$this->_ci =& get_instance();
 		$this->_ci->load->config('redis');
 		
 		// Connect to Redis
